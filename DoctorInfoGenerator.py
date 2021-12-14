@@ -7,7 +7,9 @@ specializations = ['Internal Medicine','Cardiology','Respiratory','Orthopedic']
 price_range = []
 clinic_location = []
 clinic_address = []
+med_school = []
 sex = ['Male', 'Female']
+# FOR BIRTHYEAR AND MED START YEAR, randomize birth year from 1950 to 1995 and add 21 years to it for med start year
 
 doctor_list = []
 
