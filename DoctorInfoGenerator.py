@@ -14,7 +14,7 @@ clinic_location = [
 clinic_address = ["Manila City", "Quezon City", "Zamboanga City", "Davao City"]
 med_school = ["UP","UERM", "UST", "ADMU", "St.Luke's", "FEU", "ADZU", "Davao Doctor's College"]
 sex = ['Male', 'Female']
-# FOR BIRTHYEAR AND MED START YEAR, randomize birth year from 1950 to 1995 and add 21 years to it for med start year
+# FOR BIRTHYEAR AND MED START YEAR, randomize birth year from 1950 to 1995 and add 26 years to it for med start year
 
 doctor_list = []
 
@@ -36,6 +36,8 @@ for x in range(doctor_size):
   doctor["clinic_address"] = clinic_address[clinic_address_rand]
   doctor["clinic_location"] = clinic_location[clinic_address_rand][random.randint(0,len(clinic_location[clinic_address_rand])-1)]
   doctor["med_school"] = med_school[random.randint(0,len(med_school)-1)]
+  doctor["birthyear"] = random.randrange(1950,1995,1)
+  doctor["startyear"] = doctor["birthyear"] + 26 + random.randrange(0,3,1)
 
   doctor_list.append(doctor)
 
