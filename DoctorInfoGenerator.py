@@ -4,7 +4,7 @@ import json
 
 # DATA HERE
 specializations = ["Internal Medicine", "Cardiology", "Gastroenterology"]
-price_range = ["100-500","501-1000", "1001-1500", "1500+"]
+price_range = ["100-500","501-1000", "1001-2000", "2000+"]
 clinic_location = [
   ["Philippine General Hospital", "Manila Doctors Hospital", "Manila Medical Center"], 
   ["St. Luke's Medical Center"],
