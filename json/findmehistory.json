@@ -1,0 +1,89 @@
+[
+  {
+    "date": "10/03/2021",
+    "email": "janedoe@gmail.com",
+    "symptoms": [
+      {
+          "symptomid": "17",
+          "frequency": "Once a Day",
+          "details": "",
+          "symptom": {
+              "HasRedFlag": true,
+              "Name": "Chest pain",
+              "ID": 17,
+              "HealthSymptomLocationIDs": [
+                  15
+              ],
+              "ProfName": "",
+              "Synonyms": []
+          },
+          "location": "Chest and Back"
+      },
+      {
+          "symptomid": "10",
+          "frequency": "Once a Day",
+          "details": "",
+          "symptom": {
+              "HasRedFlag": false,
+              "Name": "Abdominal pain",
+              "ID": 10,
+              "HealthSymptomLocationIDs": [
+                  16
+              ],
+              "ProfName": "",
+              "Synonyms": [
+                  " Stomach ache"
+              ]
+          },
+          "location": "Abdomen, Pelvis, and Buttocks"
+      }
+    ],
+    "preferences": {
+      "location": {
+          "val": "Manila City",
+          "act": "Manila City"
+      },
+      "age": {
+          "val": -1,
+          "act": "No preference"
+      },
+      "price": {
+          "val": "100-500",
+          "act": "Less than PHP 500.00"
+      },
+      "experience": {
+          "val": 20,
+          "act": "20 or more years of experience"
+      },
+      "gender": {
+          "val": "Female",
+          "act": "Female"
+      }
+    },
+    "diagnosis": [
+      {
+          "Issue": {
+              "ID": 18,
+              "Name": "Reflux disease",
+              "Accuracy": 90,
+              "Icd": "K21",
+              "IcdName": "Gastro-oesophageal reflux disease",
+              "ProfName": "Gastroesophageal reflux disease",
+              "Ranking": 1
+          },
+          "Specialisation": [
+              {
+                  "ID": 14,
+                  "Name": "Gastroenterology",
+                  "SpecialistID": 0
+              },
+              {
+                  "ID": 15,
+                  "Name": "General practice",
+                  "SpecialistID": 0
+              }
+          ]
+      }
+  ]
+  }
+]
