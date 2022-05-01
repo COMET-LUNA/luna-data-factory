@@ -38,6 +38,8 @@ for x in range(doctor_size):
   doctor["med_school"] = med_school[random.randint(0,len(med_school)-1)]
   doctor["birthyear"] = random.randrange(1950,1995,1)
   doctor["startyear"] = doctor["birthyear"] + 26 + random.randrange(0,3,1)
+  doctor["email"] = f'{doctor["name"].lower().replace(" ", "_")}@gmail.com'
+  doctor["contact_number"] = f'+63-9{random.randrange(10, 99)}-{random.randrange(100, 999)}-{random.randrange(1000, 9999, 3)}'
 
   doctor_list.append(doctor)
 
