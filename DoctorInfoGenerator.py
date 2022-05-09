@@ -14,6 +14,7 @@ clinic_location = [
 clinic_address = ["Manila City", "Quezon City", "Zamboanga City", "Davao City"]
 med_school = ["UP","UERM", "UST", "ADMU", "St.Luke's", "FEU", "ADZU", "Davao Doctor's College"]
 sex = ['Male', 'Female']
+teleconsult = ['yes', 'no']
 # FOR BIRTHYEAR AND MED START YEAR, randomize birth year from 1950 to 1995 and add 26 years to it for med start year
 
 doctor_list = []
@@ -40,6 +41,7 @@ for x in range(doctor_size):
   doctor["startyear"] = doctor["birthyear"] + 26 + random.randrange(0,3,1)
   doctor["email"] = f'{doctor["name"].lower().replace(" ", "_")}@gmail.com'
   doctor["contact_number"] = f'+63-9{random.randrange(10, 99)}-{random.randrange(100, 999)}-{random.randrange(1000, 9999, 3)}'
+  doctor["teleconsult"] = teleconsult[random.randint(0,len(teleconsult)-1)]
 
   doctor_list.append(doctor)
 
